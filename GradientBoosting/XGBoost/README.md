@@ -3,14 +3,8 @@
 Object function is
 
 $$
-\text{n: the number of samples, t:the number of trees, }
-y_i: \text{target values, } 
-\hat{y}_i: \text{predicted values, }
-f_t: \text{function we need to learn, }
-\omega(f_t) \text{:regularization}
+\text{obj}(\theta) = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \omega(f_t)
 $$
-
-
 
 $$
 \text{n: the number of samples, t:the number of trees, }
