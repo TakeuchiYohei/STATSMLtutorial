@@ -4,7 +4,7 @@ Object function is
 
 
 $$
-\text{obj}(\theta) = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \omega(f_t)
+\text{obj}(\theta) = \sum_{k=1}^{K} \omega + \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \omega(f_t)
 $$
 
 
