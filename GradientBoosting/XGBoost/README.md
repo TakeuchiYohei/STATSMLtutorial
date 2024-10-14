@@ -19,6 +19,8 @@ $$
 $$
 
 Taylor expansion,
+
+
 $$
 g_i = \frac{\partial}{\partial \hat{y}_i^{(t-1)}} l(y_i, \hat{y}_i^{(t-1)})
 $$
