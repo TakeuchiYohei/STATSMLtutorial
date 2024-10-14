@@ -1,8 +1,10 @@
 # XGBoost
 
+
 $$
 \text{obj}(\theta) = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \omega(f_t)
 $$
+
 
 $$
 \text{n: the number of samples, t:the number of trees, }
@@ -12,11 +14,14 @@ f_t: \text{function we need to learn, }
 \omega(f_t) \text{:regularization}
 $$
 
+
 For each tree,
+
 
 $$
 \text{obj}^{(t)} = \sum_{i=1}^{n} l(y_i, \hat{y}_i^{(t-1)} + f_t(x_i)) + \omega(f_t) + \text{constant}
 $$
+
 
 Taylor expansion,
 
@@ -64,6 +69,11 @@ $$
 ## Memo
 - Gradient and hessian are derived from the loss of y and $\hat{y}_i^{(t-1)}$
 
+## Script
+- twoclasses.py: 2-class classification task
+- regressor.py: regression task
+- multiclasses.py: multi-classes classification task
+
 ## References
 English
 - Paper (https://arxiv.org/abs/1603.02754)
@@ -71,3 +81,4 @@ English
 
 Japanese
 - https://zenn.dev/skwbc/articles/implement_gradient_boosting
+- https://qiita.com/triwave33/items/aad60f25485a4595b5c8
