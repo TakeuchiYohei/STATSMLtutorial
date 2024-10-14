@@ -1,4 +1,5 @@
 # XGBoost
+## Equation
 
 
 $$
